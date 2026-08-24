@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.academic.system.view.javafx.AssessmentRegistrationController"
+      styleClass="form-root" spacing="16">
+
+    <padding><Insets top="28" right="32" bottom="28" left="32"/></padding>
+
+    <HBox alignment="CENTER_LEFT" spacing="12">
+        <Text text="📝" style="-fx-font-size: 28px;"/>
+        <Text text="Cadastrar Avaliação" styleClass="form-title"/>
+    </HBox>
+
+    <Separator style="-fx-background-color: #E5E7EB; -fx-padding: 4 0;"/>
+
+    <Label text="Turma" styleClass="label"/>
+    <ComboBox fx:id="classComboBox" maxWidth="Infinity" styleClass="combo-box">
+        <promptText><Label text="Selecione uma turma..."/></promptText>
+    </ComboBox>
+
+    <Label text="Tipo de Avaliação" styleClass="label"/>
+    <ComboBox fx:id="typeComboBox" maxWidth="Infinity" styleClass="combo-box">
+        <promptText><Label text="Selecione o tipo..."/></promptText>
+    </ComboBox>
+
+    <Label text="Valor (nota máxima)" styleClass="label"/>
+    <TextField fx:id="valueField" promptText="Ex: 10.0" styleClass="text-field">
+        <tooltip><Tooltip text="Digite o valor máximo da avaliação (ex: 10.0)"/></tooltip>
+    </TextField>
+
+    <Label text="Peso (entre 0 e 1)" styleClass="label"/>
+    <TextField fx:id="weightField" promptText="Ex: 0.4" styleClass="text-field">
+        <tooltip><Tooltip text="Digite o peso da avaliação (ex: 0.4 para 40%)"/></tooltip>
+    </TextField>
+
+    <Label fx:id="feedbackLabel" styleClass="feedback-label" wrapText="true"/>
+
+    <HBox spacing="12" alignment="CENTER_RIGHT">
+        <Button text="Limpar" onAction="#handleClear" styleClass="secondary-button"/>
+        <Button text="Cadastrar" onAction="#handleRegister" styleClass="button">
+            <graphic><Text text="➕ "/></graphic>
+        </Button>
+    </HBox>
+</VBox>

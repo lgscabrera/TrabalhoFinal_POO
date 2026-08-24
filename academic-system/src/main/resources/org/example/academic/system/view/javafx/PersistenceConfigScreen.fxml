@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.academic.system.view.javafx.PersistenceConfigController"
+      styleClass="form-root" spacing="16">
+
+    <padding><Insets top="28" right="32" bottom="28" left="32"/></padding>
+
+    <Text text="Configurar Persistência" styleClass="form-title"/>
+
+    <Label text="Selecione o formato de persistência:"/>
+
+    <VBox spacing="10">
+        <RadioButton fx:id="txtRadio" text="TXT"/>
+        <RadioButton fx:id="xmlRadio" text="XML"/>
+        <RadioButton fx:id="jsonRadio" text="JSON"/>
+    </VBox>
+
+    <Label fx:id="feedbackLabel"/>
+
+    <Button fx:id="confirmButton" text="Confirmar" onAction="#handleConfirm" styleClass="button"/>
+</VBox>

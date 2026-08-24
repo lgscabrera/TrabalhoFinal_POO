@@ -1,0 +1,4 @@
+# Formato: username:password:ROLE
+# Papéis disponíveis: ADMIN, PROFESSOR
+admin:admin123:ADMIN
+professor:prof123:PROFESSOR

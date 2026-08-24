@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.academic.system.view.javafx.ClassRegistrationController"
+      styleClass="form-root" spacing="14">
+
+    <padding><Insets top="28" right="32" bottom="28" left="32"/></padding>
+
+    <Text text="Cadastrar Turma" styleClass="form-title"/>
+
+    <Label text="Código da Turma"/>
+    <TextField fx:id="classCodeField" promptText="Ex: CS-101"/>
+
+    <Label text="Título da Turma"/>
+    <TextField fx:id="classTitleField" promptText="Ex: Orientação a Objetos"/>
+
+    <Label fx:id="feedbackLabel"/>
+
+    <HBox spacing="10">
+        <Button text="Cadastrar" onAction="#handleRegister" styleClass="button"/>
+        <Button text="Limpar" onAction="#handleClear" styleClass="secondary-button"/>
+    </HBox>
+</VBox>

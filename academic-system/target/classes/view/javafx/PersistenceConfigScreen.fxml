@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.academic.system.view.javafx.PersistenceConfigController"
+      styleClass="form-root" spacing="16">
+
+    <padding><Insets top="28" right="32" bottom="28" left="32"/></padding>
+
+    <HBox alignment="CENTER_LEFT" spacing="12">
+        <Text text="💾" style="-fx-font-size: 28px;"/>
+        <Text text="Configurar Persistência" styleClass="form-title"/>
+    </HBox>
+
+    <Separator style="-fx-background-color: #E5E7EB; -fx-padding: 4 0;"/>
+
+    <Label text="Selecione o formato de persistência dos dados:" styleClass="label"/>
+
+    <VBox spacing="8" style="-fx-padding: 8 0 0 20;">
+        <RadioButton fx:id="txtRadio" text="TXT - Arquivo de texto simples">
+            <tooltip><Tooltip text="Formato TXT legível, sem estrutura hierárquica"/></tooltip>
+        </RadioButton>
+        <RadioButton fx:id="xmlRadio" text="XML - Formato estruturado com tags">
+            <tooltip><Tooltip text="Formato XML com hierarquia e validação"/></tooltip>
+        </RadioButton>
+        <RadioButton fx:id="jsonRadio" text="JSON - Formato leve e estruturado">
+            <tooltip><Tooltip text="Formato JSON moderno, ideal para integrações"/></tooltip>
+        </RadioButton>
+    </VBox>
+
+    <Label fx:id="feedbackLabel" styleClass="feedback-label" wrapText="true"/>
+
+    <Button fx:id="confirmButton" text="Confirmar Configuração" onAction="#handleConfirm" 
+            styleClass="button" maxWidth="Infinity">
+        <graphic><Text text="✅ "/></graphic>
+        <padding><Insets top="10" bottom="10"/></padding>
+    </Button>
+</VBox>

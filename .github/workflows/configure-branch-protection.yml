@@ -1,0 +1,43 @@
+name: Configure Branch Protection
+
+# TUS-2420 — Configuração de regras de Branch Protection para a branch main
+#
+# Em vez de configurar isso manualmente em Settings > Branches, esse
+# workflow aplica a regra via API do GitHub, então a configuração também
+# fica versionada e documentada no repositório.
+#
+# Como executar: aba "Actions" > "Configure Branch Protection" > "Run workflow".
+# Só precisa rodar uma vez (ou de novo, se a regra precisar mudar).
+on:
+  workflow_dispatch:
+
+jobs:
+  protect-main:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      administration: write
+
+    steps:
+      - name: Apply branch protection rule to main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api \
+            --method PUT \
+            -H "Accept: application/vnd.github+json" \
+            /repos/${{ github.repository }}/branches/main/protection \
+            -f "required_status_checks[strict]=true" \
+            -f "required_status_checks[contexts][]=build-and-test" \
+            -f "required_status_checks[contexts][]=validate" \
+            -F "enforce_admins=true" \
+            -F "required_pull_request_reviews[required_approving_review_count]=1" \
+            -F "restrictions=null"
+
+      # Nota: o GITHUB_TOKEN automático às vezes não tem permissão de
+      # administração suficiente para esta chamada, dependendo das
+      # configurações do repositório/organização. Se o passo acima falhar
+      # com 403, a alternativa é gerar um Personal Access Token (classic,
+      # com escopo "repo" e permissão de admin no repositório), salvá-lo
+      # como secret (ex: ADMIN_TOKEN) e usar `GH_TOKEN: ${{ secrets.ADMIN_TOKEN }}`
+      # nesse step, ou simplesmente configurar via Settings > Branches.

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.academic.system.view.javafx.ReportScreenController"
+      spacing="12" styleClass="form-root">
+
+    <padding><Insets top="24" right="28" bottom="24" left="28"/></padding>
+
+    <Text text="Relatórios" styleClass="form-title"/>
+
+    <HBox spacing="10">
+        <Button fx:id="classSummaryButton" text="Resumo de Turmas" onAction="#handleClassSummary"/>
+        <Button fx:id="weightReportButton" text="Pesos das Avaliações" onAction="#handleWeightReport"/>
+        <HBox fx:id="adminReportBar" spacing="10">
+            <Button fx:id="persistenceReportButton" text="Configuração de Persistência"
+                    onAction="#handlePersistenceReport"/>
+        </HBox>
+    </HBox>
+
+    <TextArea fx:id="reportArea" VBox.vgrow="ALWAYS" minHeight="340"
+              styleClass="report-text-area" editable="false" wrapText="true"/>
+</VBox>

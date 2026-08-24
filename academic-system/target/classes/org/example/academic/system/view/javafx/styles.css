@@ -1,0 +1,258 @@
+/* ============================================================
+   Academic System — JavaFX Stylesheet
+   Palette: slate-navy primary, warm-white background, teal accent
+   ============================================================ */
+
+/* ----- Root palette ----- */
+.root {
+    -fx-background-color: #F5F6FA;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* ----- Login screen ----- */
+.login-root {
+    -fx-background-color: #1E2A3A;
+}
+
+.login-title {
+    -fx-fill: #FFFFFF;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.login-subtitle {
+    -fx-fill: #A0AEC0;
+    -fx-font-size: 12px;
+}
+
+.field-label {
+    -fx-text-fill: #CBD5E0;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.input-field {
+    -fx-background-color: #2D3748;
+    -fx-text-fill: #FFFFFF;
+    -fx-prompt-text-fill: #718096;
+    -fx-border-color: #4A5568;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 8 12;
+    -fx-font-size: 14px;
+}
+
+.input-field:focused {
+    -fx-border-color: #38BDF8;
+    -fx-effect: dropshadow(gaussian, rgba(56,189,248,0.3), 6, 0, 0, 0);
+}
+
+.error-label {
+    -fx-text-fill: #FC8181;
+    -fx-font-size: 12px;
+    -fx-wrap-text: true;
+}
+
+/* ----- Primary button ----- */
+.primary-button {
+    -fx-background-color: #2563EB;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+    -fx-padding: 10 0;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #1D4ED8;
+}
+
+.primary-button:pressed {
+    -fx-background-color: #1E40AF;
+}
+
+/* ----- Main screen ----- */
+.main-root {
+    -fx-background-color: #F5F6FA;
+}
+
+.main-header {
+    -fx-background-color: #1E2A3A;
+}
+
+.header-welcome {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.header-role {
+    -fx-text-fill: #38BDF8;
+    -fx-font-size: 12px;
+}
+
+.logout-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #A0AEC0;
+    -fx-border-color: #4A5568;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 6 14;
+    -fx-cursor: hand;
+}
+
+.logout-button:hover {
+    -fx-background-color: #2D3748;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* ----- Nav panel ----- */
+.nav-panel {
+    -fx-background-color: #F0F2F8;
+    -fx-border-color: #DEE3EE;
+    -fx-border-width: 0 1 0 0;
+}
+
+.nav-section-label {
+    -fx-text-fill: #8896AA;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 4 4 4;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #374151;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 9 12;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #E2E8F0;
+    -fx-text-fill: #1E2A3A;
+}
+
+.nav-admin {
+    -fx-text-fill: #1E40AF;
+}
+
+.nav-admin:hover {
+    -fx-background-color: #DBEAFE;
+}
+
+/* ----- Main content ----- */
+.main-content {
+    -fx-background-color: #F5F6FA;
+    -fx-padding: 32;
+}
+
+.placeholder-text {
+    -fx-fill: #9CA3AF;
+    -fx-font-size: 15px;
+}
+
+/* ----- Form screens ----- */
+.form-root {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 32;
+    -fx-spacing: 16;
+}
+
+.form-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-fill: #1E2A3A;
+}
+
+.label {
+    -fx-text-fill: #374151;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.text-field, .combo-box, .text-area {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D1D5DB;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 7 10;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused, .combo-box:focused, .text-area:focused {
+    -fx-border-color: #2563EB;
+}
+
+/* ----- Feedback labels ----- */
+.success {
+    -fx-text-fill: #059669;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.error {
+    -fx-text-fill: #DC2626;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* ----- Buttons in forms ----- */
+.button {
+    -fx-background-color: #2563EB;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 18;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #1D4ED8;
+}
+
+.secondary-button {
+    -fx-background-color: #6B7280;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 18;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #4B5563;
+}
+
+/* ----- Tables ----- */
+.table-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E5E7EB;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.table-view .column-header {
+    -fx-background-color: #F9FAFB;
+    -fx-text-fill: #374151;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #DBEAFE;
+    -fx-text-fill: #1E40AF;
+}
+
+/* ----- Report area ----- */
+.report-text-area {
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-size: 12px;
+    -fx-background-color: #1E2A3A;
+    -fx-text-fill: #E2E8F0;
+}

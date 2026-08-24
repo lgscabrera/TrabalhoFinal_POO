@@ -1,0 +1,230 @@
+2026-06-29 02:39:22 [WARN] o.e.a.s.s.AuthenticationService - Acesso negado. Papel atual: 'SEM SESSÃO'. Operação protegida: 'operação protegida'.
+2026-06-29 02:39:22 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'prof', Papel: PROFESSOR
+2026-06-29 02:39:22 [WARN] o.e.a.s.s.AuthenticationService - Acesso negado. Papel atual: 'PROFESSOR'. Operação protegida: 'cadastrar turma'.
+2026-06-29 02:39:22 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'admin', Papel: ADMIN
+2026-06-29 02:39:22 [INFO] o.e.a.s.s.AuthenticationService - Acesso autorizado. Usuário: 'admin', Papel: ADMIN, Operação: 'cadastrar turma'
+2026-06-29 02:39:22 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'prof', Papel: PROFESSOR
+2026-06-29 02:39:22 [WARN] o.e.a.s.s.AuthenticationService - Acesso negado. Papel atual: 'PROFESSOR'. Operação protegida: 'salvar dados'.
+2026-06-29 02:39:22 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2026-06-29 02:39:22 [INFO] o.e.a.system.service.TurmaService - Turma registrada: BCC-ASSMT-TST - Classe de Teste
+2026-06-29 02:39:22 [WARN] o.e.a.s.service.AssessmentService - Tipo de avaliação inválido: INVALID_TYPE
+2026-06-29 02:39:22 [WARN] o.e.a.s.service.AssessmentService - Tentativa de registrar avaliação em turma inexistente: NAOEXISTE
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.AssessmentService - Avaliação EXAM registrada na turma BCC-ASSMT-TST.
+2026-06-29 02:39:22 [INFO] test.business - Resultado: 4
+2026-06-29 02:39:22 [INFO] o.e.a.s.LoggingInfrastructureTest - Teste de log INFO - infraestrutura funcionando.
+2026-06-29 02:39:22 [WARN] o.e.a.s.LoggingInfrastructureTest - Teste de log WARN - infraestrutura funcionando.
+2026-06-29 02:39:22 [ERROR] o.e.a.s.LoggingInfrastructureTest - Teste de log ERROR - infraestrutura funcionando.
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Alterando tipo de persistência de TXT para JSON.
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Tipo de persistência alterado com sucesso para JSON.
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Iniciando operação de salvamento. Tipo de persistência ativo: JSON
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Iniciando persistência em JSON. Arquivo: 'academic_data.json'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Persistência em JSON concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Operação de salvamento concluída. Tipo: JSON, 1 turma(s) processada(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Alterando tipo de persistência de TXT para XML.
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Tipo de persistência alterado com sucesso para XML.
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Iniciando operação de salvamento. Tipo de persistência ativo: XML
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Iniciando persistência em XML. Arquivo: 'academic_data.xml'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Persistência em XML concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Operação de salvamento concluída. Tipo: XML, 1 turma(s) processada(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Iniciando operação de salvamento. Tipo de persistência ativo: TXT
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Iniciando persistência em TXT. Arquivo: 'academic_data.txt'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Persistência em TXT concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Operação de salvamento concluída. Tipo: TXT, 1 turma(s) processada(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Iniciando operação de salvamento. Tipo de persistência ativo: TXT
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Iniciando persistência em TXT. Arquivo: 'academic_data.txt'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Persistência em TXT concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Operação de salvamento concluída. Tipo: TXT, 1 turma(s) processada(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Alterando tipo de persistência de TXT para XML.
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - Tipo de persistência alterado com sucesso para XML.
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:39:22 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: ADMIN
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:39:22 [INFO] o.e.a.system.service.ReportService - Gerando relatório de pesos. Papel: ADMIN
+2026-06-29 02:39:22 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:39:22 [INFO] o.e.a.system.service.ReportService - Gerando relatório de persistência. Papel: ADMIN
+2026-06-29 02:39:22 [INFO] o.e.a.system.service.TurmaService - Turma registrada: BCC-TEST-988919688304 - Test Class
+2026-06-29 02:39:22 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'admin', Papel: ADMIN
+2026-06-29 02:39:22 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'admin', Papel: ADMIN
+2026-06-29 02:39:22 [INFO] o.e.a.s.s.AuthenticationService - Logout realizado. Usuário: 'admin', Papel: ADMIN
+2026-06-29 02:39:22 [WARN] o.e.a.s.s.AuthenticationService - Tentativa de login malsucedida para o usuário: 'invalido'
+2026-06-29 02:39:22 [WARN] o.e.a.s.s.AuthenticationService - Tentativa de login malsucedida para o usuário: 'professor'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Iniciando persistência em XML. Arquivo: 'academic_data.xml'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Persistência em XML concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Iniciando persistência em XML. Arquivo: 'academic_data.xml'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Persistência em XML concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Iniciando persistência em JSON. Arquivo: 'academic_data.json'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Persistência em JSON concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Iniciando persistência em TXT. Arquivo: 'academic_data.txt'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Persistência em TXT concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Iniciando persistência em TXT. Arquivo: 'academic_data.txt'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Persistência em TXT concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Iniciando persistência em XML. Arquivo: 'academic_data.xml'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Persistência em XML concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Iniciando persistência em TXT. Arquivo: 'academic_data.txt'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Persistência em TXT concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Iniciando persistência em JSON. Arquivo: 'academic_data.json'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Persistência em JSON concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Iniciando persistência em JSON. Arquivo: 'academic_data.json'
+2026-06-29 02:39:22 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Persistência em JSON concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:39:23 [WARN] o.e.a.s.c.AcademicSystemController - Acesso negado. Papel: PROFESSOR. Operação: cadastrar turma
+2026-06-29 02:39:45 [INFO] o.e.a.s.AcademicSystemApplication - Iniciando Academic System.
+2026-06-29 02:39:45 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:41:03 [WARN] o.e.a.s.s.AuthenticationService - Tentativa de login malsucedida para o usuário: 'ADMIN'
+2026-06-29 02:41:13 [WARN] o.e.a.s.s.AuthenticationService - Tentativa de login malsucedida para o usuário: 'admin123'
+2026-06-29 02:41:19 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'admin', Papel: ADMIN
+2026-06-29 02:41:51 [WARN] o.e.a.s.s.AuthenticationService - Acesso negado. Papel atual: 'SEM SESSÃO'. Operação protegida: 'operação protegida'.
+2026-06-29 02:41:51 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'prof', Papel: PROFESSOR
+2026-06-29 02:41:51 [WARN] o.e.a.s.s.AuthenticationService - Acesso negado. Papel atual: 'PROFESSOR'. Operação protegida: 'cadastrar turma'.
+2026-06-29 02:41:51 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'admin', Papel: ADMIN
+2026-06-29 02:41:51 [INFO] o.e.a.s.s.AuthenticationService - Acesso autorizado. Usuário: 'admin', Papel: ADMIN, Operação: 'cadastrar turma'
+2026-06-29 02:41:51 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'prof', Papel: PROFESSOR
+2026-06-29 02:41:51 [WARN] o.e.a.s.s.AuthenticationService - Acesso negado. Papel atual: 'PROFESSOR'. Operação protegida: 'salvar dados'.
+2026-06-29 02:41:51 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2026-06-29 02:41:51 [INFO] o.e.a.system.service.TurmaService - Turma registrada: BCC-ASSMT-TST - Classe de Teste
+2026-06-29 02:41:51 [WARN] o.e.a.s.service.AssessmentService - Tipo de avaliação inválido: INVALID_TYPE
+2026-06-29 02:41:51 [WARN] o.e.a.s.service.AssessmentService - Tentativa de registrar avaliação em turma inexistente: NAOEXISTE
+2026-06-29 02:41:51 [INFO] o.e.a.s.service.AssessmentService - Avaliação EXAM registrada na turma BCC-ASSMT-TST.
+2026-06-29 02:41:51 [INFO] test.business - Resultado: 4
+2026-06-29 02:41:51 [INFO] o.e.a.s.LoggingInfrastructureTest - Teste de log INFO - infraestrutura funcionando.
+2026-06-29 02:41:51 [WARN] o.e.a.s.LoggingInfrastructureTest - Teste de log WARN - infraestrutura funcionando.
+2026-06-29 02:41:51 [ERROR] o.e.a.s.LoggingInfrastructureTest - Teste de log ERROR - infraestrutura funcionando.
+2026-06-29 02:41:51 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:41:51 [INFO] o.e.a.s.service.PersistenceService - Alterando tipo de persistência de TXT para JSON.
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Tipo de persistência alterado com sucesso para JSON.
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Iniciando operação de salvamento. Tipo de persistência ativo: JSON
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Iniciando persistência em JSON. Arquivo: 'academic_data.json'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Persistência em JSON concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Operação de salvamento concluída. Tipo: JSON, 1 turma(s) processada(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Alterando tipo de persistência de TXT para XML.
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Tipo de persistência alterado com sucesso para XML.
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Iniciando operação de salvamento. Tipo de persistência ativo: XML
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Iniciando persistência em XML. Arquivo: 'academic_data.xml'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Persistência em XML concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Operação de salvamento concluída. Tipo: XML, 1 turma(s) processada(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Iniciando operação de salvamento. Tipo de persistência ativo: TXT
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Iniciando persistência em TXT. Arquivo: 'academic_data.txt'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Persistência em TXT concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Operação de salvamento concluída. Tipo: TXT, 1 turma(s) processada(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Iniciando operação de salvamento. Tipo de persistência ativo: TXT
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Iniciando persistência em TXT. Arquivo: 'academic_data.txt'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Persistência em TXT concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Operação de salvamento concluída. Tipo: TXT, 1 turma(s) processada(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Alterando tipo de persistência de TXT para XML.
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - Tipo de persistência alterado com sucesso para XML.
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:41:52 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: ADMIN
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:41:52 [INFO] o.e.a.system.service.ReportService - Gerando relatório de pesos. Papel: ADMIN
+2026-06-29 02:41:52 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:41:52 [INFO] o.e.a.system.service.ReportService - Gerando relatório de persistência. Papel: ADMIN
+2026-06-29 02:41:52 [INFO] o.e.a.system.service.TurmaService - Turma registrada: BCC-TEST-1138330472985 - Test Class
+2026-06-29 02:41:52 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'admin', Papel: ADMIN
+2026-06-29 02:41:52 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'admin', Papel: ADMIN
+2026-06-29 02:41:52 [INFO] o.e.a.s.s.AuthenticationService - Logout realizado. Usuário: 'admin', Papel: ADMIN
+2026-06-29 02:41:52 [WARN] o.e.a.s.s.AuthenticationService - Tentativa de login malsucedida para o usuário: 'invalido'
+2026-06-29 02:41:52 [WARN] o.e.a.s.s.AuthenticationService - Tentativa de login malsucedida para o usuário: 'professor'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Iniciando persistência em XML. Arquivo: 'academic_data.xml'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Persistência em XML concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Iniciando persistência em XML. Arquivo: 'academic_data.xml'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Persistência em XML concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Iniciando persistência em JSON. Arquivo: 'academic_data.json'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Persistência em JSON concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Iniciando persistência em TXT. Arquivo: 'academic_data.txt'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Persistência em TXT concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Iniciando persistência em TXT. Arquivo: 'academic_data.txt'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Persistência em TXT concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Iniciando persistência em XML. Arquivo: 'academic_data.xml'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.XmlAcademicClassRepository - Persistência em XML concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Iniciando persistência em TXT. Arquivo: 'academic_data.txt'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.TxtAcademicClassRepository - Persistência em TXT concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Iniciando persistência em JSON. Arquivo: 'academic_data.json'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Persistência em JSON concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Iniciando persistência em JSON. Arquivo: 'academic_data.json'
+2026-06-29 02:41:52 [INFO] o.e.a.s.r.JsonAcademicClassRepository - Persistência em JSON concluída com sucesso. 1 turma(s) salva(s).
+2026-06-29 02:41:52 [WARN] o.e.a.s.c.AcademicSystemController - Acesso negado. Papel: PROFESSOR. Operação: cadastrar turma
+2026-06-29 02:42:03 [INFO] o.e.a.s.AcademicSystemApplication - Iniciando Academic System.
+2026-06-29 02:42:03 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:42:10 [WARN] o.e.a.s.s.AuthenticationService - Tentativa de login malsucedida para o usuário: 'prof'
+2026-06-29 02:42:27 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 02:44:08 [INFO] o.e.a.s.AcademicSystemApplication - Iniciando Academic System.
+2026-06-29 02:44:08 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:44:17 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 02:54:45 [INFO] o.e.a.s.AcademicSystemApplication - Iniciando Academic System.
+2026-06-29 02:54:45 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 02:54:54 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 02:54:59 [INFO] o.e.a.system.service.ReportService - Gerando relatório de pesos. Papel: PROFESSOR
+2026-06-29 02:55:04 [INFO] o.e.a.s.s.AuthenticationService - Logout realizado. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 03:08:42 [INFO] o.e.a.s.AcademicSystemApplication - Iniciando Academic System.
+2026-06-29 03:08:42 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:09:01 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 03:19:27 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 03:20:19 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 03:20:28 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:20:28 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: PROFESSOR
+2026-06-29 03:20:41 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:20:56 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'admin', Papel: ADMIN
+2026-06-29 03:22:04 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'admin', Papel: ADMIN
+2026-06-29 03:22:12 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:22:54 [INFO] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2026-06-29 03:22:54 [INFO] o.e.a.system.service.TurmaService - Turma registrada: dce67 - Orientação a ...
+2026-06-29 03:23:02 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:23:02 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: ADMIN
+2026-06-29 03:23:08 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: ADMIN
+2026-06-29 03:23:32 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:24:20 [INFO] o.e.a.s.service.AssessmentService - Avaliação EXAM registrada na turma dce67.
+2026-06-29 03:24:29 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:24:29 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: ADMIN
+2026-06-29 03:24:40 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:24:40 [INFO] o.e.a.system.service.ReportService - Gerando relatório de pesos. Papel: ADMIN
+2026-06-29 03:24:56 [INFO] o.e.a.system.service.ReportService - Gerando relatório de persistência. Papel: ADMIN
+2026-06-29 03:25:04 [INFO] o.e.a.system.service.ReportService - Gerando relatório de pesos. Papel: ADMIN
+2026-06-29 03:25:06 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: ADMIN
+2026-06-29 03:25:12 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:25:23 [INFO] o.e.a.s.service.AssessmentService - Avaliação SEMINAR registrada na turma dce67.
+2026-06-29 03:25:27 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:25:27 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: ADMIN
+2026-06-29 03:25:28 [INFO] o.e.a.system.service.ReportService - Gerando relatório de pesos. Papel: ADMIN
+2026-06-29 03:25:37 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: ADMIN
+2026-06-29 03:25:55 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:26:00 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:26:00 [INFO] o.e.a.system.service.ReportService - Gerando relatório de persistência. Papel: ADMIN
+2026-06-29 03:27:01 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 03:27:07 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:27:23 [INFO] o.e.a.s.service.AssessmentService - Avaliação EXAM registrada na turma dce67.
+2026-06-29 03:27:26 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:27:26 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: PROFESSOR
+2026-06-29 03:27:31 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: PROFESSOR
+2026-06-29 03:27:35 [INFO] o.e.a.system.service.ReportService - Gerando relatório de pesos. Papel: PROFESSOR
+2026-06-29 03:27:40 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:27:40 [INFO] o.e.a.system.service.ReportService - Gerando relatório de pesos. Papel: PROFESSOR
+2026-06-29 03:29:29 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 03:29:32 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:29:32 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: PROFESSOR
+2026-06-29 03:29:57 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 03:29:59 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:29:59 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: PROFESSOR
+2026-06-29 03:31:37 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 03:31:38 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:31:38 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: PROFESSOR
+2026-06-29 03:32:48 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 03:32:49 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:32:49 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: PROFESSOR
+2026-06-29 03:33:39 [WARN] o.e.a.s.s.AuthenticationService - Tentativa de login malsucedida para o usuário: 'pprofessor'
+2026-06-29 03:33:49 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 03:33:51 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:33:51 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: PROFESSOR
+2026-06-29 03:38:15 [INFO] o.e.a.s.s.AuthenticationService - Login realizado com sucesso. Usuário: 'professor', Papel: PROFESSOR
+2026-06-29 03:38:22 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:38:29 [INFO] o.e.a.s.service.PersistenceService - PersistenceService inicializado. Tipo padrão: TXT
+2026-06-29 03:38:29 [INFO] o.e.a.system.service.ReportService - Gerando relatório de avaliações por turma. Papel: PROFESSOR

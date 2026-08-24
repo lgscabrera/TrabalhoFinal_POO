@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.academic.system.view.javafx.VisualizationScreenController"
+      styleClass="form-root" spacing="12">
+
+    <padding><Insets top="24" right="28" bottom="24" left="28"/></padding>
+
+    <HBox alignment="CENTER_LEFT" spacing="12">
+        <Text text="👀" style="-fx-font-size: 28px;"/>
+        <Text text="Visualizar Dados Acadêmicos" styleClass="form-title" HBox.hgrow="ALWAYS"/>
+        <Button text="↻ Atualizar" onAction="#handleRefresh" styleClass="secondary-button"/>
+    </HBox>
+
+    <Separator style="-fx-background-color: #E5E7EB; -fx-padding: 4 0;"/>
+
+    <!-- Estatísticas rápidas -->
+    <HBox spacing="20" style="-fx-padding: 4 0 8 0;">
+        <Label fx:id="totalClassesLabel" text="Turmas: 0" style="-fx-text-fill: #1F2937; -fx-font-weight: bold;"/>
+        <Label fx:id="totalAssessmentsLabel" text="Avaliações: 0" style="-fx-text-fill: #1F2937; -fx-font-weight: bold;"/>
+    </HBox>
+
+    <!-- Classes table -->
+    <Label text="📚 Turmas Cadastradas" styleClass="label"/>
+    <TableView fx:id="classTable" VBox.vgrow="ALWAYS" minHeight="160" styleClass="table-view">
+        <columns>
+            <TableColumn fx:id="classCodeColumn" text="Código" minWidth="100" prefWidth="120"/>
+            <TableColumn fx:id="classTitleColumn" text="Título" minWidth="200" prefWidth="320"/>
+            <TableColumn fx:id="assessmentCountColumn" text="Avaliações" minWidth="110" prefWidth="140"/>
+        </columns>
+        <placeholder><Label text="Nenhuma turma cadastrada." style="-fx-text-fill: #9CA3AF;"/></placeholder>
+        <rowFactory><TableView.rowFactory/></rowFactory>
+    </TableView>
+
+    <!-- Assessments table -->
+    <Label fx:id="selectedClassLabel" text="📝 Avaliações da turma selecionada" styleClass="label"/>
+    <TableView fx:id="assessmentTable" VBox.vgrow="ALWAYS" minHeight="140" styleClass="table-view">
+        <columns>
+            <TableColumn fx:id="assessmentTypeColumn" text="Tipo" minWidth="140" prefWidth="200"/>
+            <TableColumn fx:id="assessmentValueColumn" text="Valor" minWidth="80" prefWidth="120"/>
+            <TableColumn fx:id="assessmentWeightColumn" text="Peso" minWidth="80" prefWidth="120"/>
+        </columns>
+        <placeholder><Label text="Selecione uma turma para ver suas avaliações." style="-fx-text-fill: #9CA3AF;"/></placeholder>
+        <rowFactory><TableView.rowFactory/></rowFactory>
+    </TableView>
+</VBox>

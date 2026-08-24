@@ -1,0 +1,32 @@
+name: PR Validation
+
+# TUS-2418 — Configure pull request validation workflow
+#
+# Separate from ci.yml on purpose: this is what should be wired up as a
+# required status check (Settings > Branches > Branch protection rules)
+# so a PR can't be merged into main if the build or tests are broken.
+on:
+  pull_request:
+    branches: [ "main" ]
+
+defaults:
+  run:
+    working-directory: academic-system
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 25
+        uses: actions/setup-java@v4
+        with:
+          java-version: '25'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Build and run tests
+        run: mvn -B clean verify

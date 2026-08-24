@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.academic.system.view.javafx.VisualizationScreenController"
+      styleClass="form-root" spacing="14">
+
+    <padding><Insets top="24" right="28" bottom="24" left="28"/></padding>
+
+    <HBox alignment="CENTER_LEFT" spacing="16">
+        <Text text="Visualizar Dados Acadêmicos" styleClass="form-title" HBox.hgrow="ALWAYS"/>
+        <Button text="↻ Atualizar" onAction="#handleRefresh" styleClass="secondary-button"/>
+    </HBox>
+
+    <!-- Classes table -->
+    <Label text="Turmas Cadastradas" styleClass="label"/>
+    <TableView fx:id="classTable" VBox.vgrow="ALWAYS" minHeight="180">
+        <columns>
+            <TableColumn fx:id="classCodeColumn" text="Código" minWidth="100" prefWidth="120"/>
+            <TableColumn fx:id="classTitleColumn" text="Título" minWidth="200" prefWidth="320"/>
+            <TableColumn fx:id="assessmentCountColumn" text="Avaliações" minWidth="110" prefWidth="140"/>
+        </columns>
+        <placeholder><Label text="Nenhuma turma cadastrada."/></placeholder>
+    </TableView>
+
+    <!-- Assessments table -->
+    <Label fx:id="selectedClassLabel" styleClass="label"/>
+    <TableView fx:id="assessmentTable" VBox.vgrow="ALWAYS" minHeight="160">
+        <columns>
+            <TableColumn fx:id="assessmentTypeColumn" text="Tipo" minWidth="140" prefWidth="200"/>
+            <TableColumn fx:id="assessmentValueColumn" text="Valor" minWidth="80" prefWidth="120"/>
+            <TableColumn fx:id="assessmentWeightColumn" text="Peso" minWidth="80" prefWidth="120"/>
+        </columns>
+        <placeholder><Label text="Selecione uma turma para ver suas avaliações."/></placeholder>
+    </TableView>
+</VBox>

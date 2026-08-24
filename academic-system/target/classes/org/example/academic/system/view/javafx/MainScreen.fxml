@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.academic.system.view.javafx.MainScreenController"
+            styleClass="main-root">
+
+    <!-- Header -->
+    <top>
+        <HBox styleClass="main-header" alignment="CENTER_LEFT" spacing="16">
+            <padding><Insets top="16" right="24" bottom="16" left="24"/></padding>
+            <VBox spacing="2" HBox.hgrow="ALWAYS">
+                <Label fx:id="welcomeLabel" styleClass="header-welcome"/>
+                <Label fx:id="roleLabel" styleClass="header-role"/>
+            </VBox>
+            <Button fx:id="logoutButton" text="Sair" styleClass="logout-button"
+                    onAction="#handleLogout"/>
+        </HBox>
+    </top>
+
+    <!-- Navigation menu -->
+    <left>
+        <VBox styleClass="nav-panel" spacing="4" minWidth="220">
+            <padding><Insets top="24" right="12" bottom="24" left="12"/></padding>
+
+            <Label text="ACADÊMICO" styleClass="nav-section-label"/>
+            <Button fx:id="registerAssessmentButton" text="Cadastrar Avaliação"
+                    maxWidth="Infinity" styleClass="nav-button" onAction="#handleRegisterAssessment"/>
+            <Button fx:id="classReportButton" text="Relatório de Turmas"
+                    maxWidth="Infinity" styleClass="nav-button" onAction="#handleClassReport"/>
+            <Button fx:id="weightReportButton" text="Relatório de Pesos"
+                    maxWidth="Infinity" styleClass="nav-button" onAction="#handleWeightReport"/>
+            <Button fx:id="visualizeDataButton" text="Visualizar Dados"
+                    maxWidth="Infinity" styleClass="nav-button" onAction="#handleVisualizeData"/>
+
+            <!-- ADMIN-only section -->
+            <VBox fx:id="adminSection" spacing="4">
+                <padding><Insets top="16" bottom="0" left="0" right="0"/></padding>
+                <Label text="ADMINISTRAÇÃO" styleClass="nav-section-label"/>
+                <Button fx:id="registerClassButton" text="Cadastrar Turma"
+                        maxWidth="Infinity" styleClass="nav-button nav-admin" onAction="#handleRegisterClass"/>
+                <Button fx:id="persistenceConfigButton" text="Configurar Persistência"
+                        maxWidth="Infinity" styleClass="nav-button nav-admin" onAction="#handlePersistenceConfig"/>
+                <Button fx:id="persistenceReportButton" text="Relatório de Persistência"
+                        maxWidth="Infinity" styleClass="nav-button nav-admin" onAction="#handlePersistenceReport"/>
+            </VBox>
+        </VBox>
+    </left>
+
+    <!-- Content area -->
+    <center>
+        <VBox alignment="CENTER" spacing="12" styleClass="main-content">
+            <Text text="Selecione uma opção no menu lateral" styleClass="placeholder-text"/>
+        </VBox>
+    </center>
+</BorderPane>

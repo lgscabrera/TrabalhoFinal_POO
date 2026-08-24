@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.academic.system.view.javafx.LoginScreenController"
+      alignment="CENTER" spacing="16"
+      styleClass="login-root">
+
+    <padding><Insets top="40" right="48" bottom="40" left="48"/></padding>
+
+    <Text text="Academic System" styleClass="login-title"/>
+    <Text text="UNIFAL-MG — Orientação a Objetos" styleClass="login-subtitle"/>
+
+    <VBox spacing="8" maxWidth="320">
+        <Label text="Usuário" styleClass="field-label"/>
+        <TextField fx:id="usernameField" promptText="Digite seu usuário" styleClass="input-field"/>
+
+        <Label text="Senha" styleClass="field-label"/>
+        <PasswordField fx:id="passwordField" promptText="Digite sua senha" styleClass="input-field"/>
+
+        <Label fx:id="errorLabel" styleClass="error-label" wrapText="true"/>
+
+        <Button fx:id="loginButton" text="Entrar" maxWidth="Infinity"
+                styleClass="primary-button" defaultButton="true"/>
+    </VBox>
+</VBox>

@@ -1,0 +1,39 @@
+name: CI
+
+# TUS-2415 — Configure CI pipeline with GitHub Actions
+on:
+  push:
+    branches: [ "main" ]
+
+defaults:
+  run:
+    working-directory: academic-system
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 25
+        uses: actions/setup-java@v4
+        with:
+          java-version: '25'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Build and run tests
+        run: mvn -B clean verify
+
+      # TUS-2416 — Generate test coverage reports
+      # `mvn verify` already triggers the jacoco-maven-plugin (bound to the
+      # test phase in pom.xml); this step just publishes the HTML report
+      # so it can be downloaded from the Actions run summary.
+      - name: Upload JaCoCo coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacoco-coverage-report
+          path: academic-system/target/site/jacoco/

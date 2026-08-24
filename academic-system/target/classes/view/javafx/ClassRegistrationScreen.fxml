@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.academic.system.view.javafx.ClassRegistrationController"
+      styleClass="form-root" spacing="16">
+
+    <padding><Insets top="28" right="32" bottom="28" left="32"/></padding>
+
+    <HBox alignment="CENTER_LEFT" spacing="12">
+        <Text text="📚" style="-fx-font-size: 28px;"/>
+        <Text text="Cadastrar Turma" styleClass="form-title"/>
+    </HBox>
+
+    <Separator style="-fx-background-color: #E5E7EB; -fx-padding: 4 0;"/>
+
+    <Label text="Código da Turma" styleClass="label"/>
+    <TextField fx:id="classCodeField" promptText="Ex: CS-101" styleClass="text-field">
+        <tooltip><Tooltip text="Digite um código único para a turma (ex: CS-101)"/></tooltip>
+    </TextField>
+
+    <Label text="Título da Turma" styleClass="label"/>
+    <TextField fx:id="classTitleField" promptText="Ex: Orientação a Objetos" styleClass="text-field">
+        <tooltip><Tooltip text="Digite o título da disciplina"/></tooltip>
+    </TextField>
+
+    <Label fx:id="feedbackLabel" styleClass="feedback-label" wrapText="true"/>
+
+    <HBox spacing="12" alignment="CENTER_RIGHT">
+        <Button text="Limpar" onAction="#handleClear" styleClass="secondary-button"/>
+        <Button text="Cadastrar" onAction="#handleRegister" styleClass="button">
+            <graphic><Text text="➕ "/></graphic>
+        </Button>
+    </HBox>
+</VBox>

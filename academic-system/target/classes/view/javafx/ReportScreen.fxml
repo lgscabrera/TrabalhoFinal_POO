@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.academic.system.view.javafx.ReportScreenController"
+      spacing="14" styleClass="form-root">
+
+    <padding><Insets top="24" right="28" bottom="24" left="28"/></padding>
+
+    <HBox alignment="CENTER_LEFT" spacing="12">
+        <Text text="📊" style="-fx-font-size: 28px;"/>
+        <Text text="Relatórios" styleClass="form-title"/>
+    </HBox>
+
+    <Separator style="-fx-background-color: #E5E7EB; -fx-padding: 4 0;"/>
+
+    <HBox spacing="10" wrap="true" alignment="CENTER_LEFT">
+        <Button fx:id="classSummaryButton" text="Resumo de Turmas" onAction="#handleClassSummary" 
+                styleClass="button"/>
+        <Button fx:id="weightReportButton" text="Pesos das Avaliações" onAction="#handleWeightReport" 
+                styleClass="button"/>
+        <HBox fx:id="adminReportBar" spacing="10" visible="false" managed="false">
+            <Button fx:id="persistenceReportButton" text="Configuração de Persistência" 
+                    onAction="#handlePersistenceReport" styleClass="secondary-button"/>
+        </HBox>
+    </HBox>
+
+    <ProgressIndicator fx:id="loadingIndicator" visible="false" managed="false" 
+                       style="-fx-progress-color: #2563EB;"/>
+
+    <TextArea fx:id="reportArea" VBox.vgrow="ALWAYS" minHeight="340"
+              styleClass="report-text-area" editable="false" wrapText="true">
+        <tooltip><Tooltip text="Relatórios gerados pelo sistema aparecerão aqui"/></tooltip>
+    </TextArea>
+</VBox>

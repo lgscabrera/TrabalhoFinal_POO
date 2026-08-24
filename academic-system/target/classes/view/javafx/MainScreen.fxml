@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.academic.system.view.javafx.MainScreenController"
+            styleClass="main-root">
+
+    <!-- Header -->
+    <top>
+        <HBox styleClass="main-header" alignment="CENTER_LEFT" spacing="16">
+            <padding><Insets top="14" right="24" bottom="14" left="24"/></padding>
+            <VBox spacing="2" HBox.hgrow="ALWAYS">
+                <Label fx:id="welcomeLabel" styleClass="header-welcome">
+                    <graphic><Text text="👋 " style="-fx-font-size: 18px;"/></graphic>
+                </Label>
+                <Label fx:id="roleLabel" styleClass="header-role"/>
+            </VBox>
+            <Button fx:id="logoutButton" text="Sair" styleClass="logout-button"
+                    onAction="#handleLogout"/>
+        </HBox>
+    </top>
+
+    <!-- Navigation menu -->
+    <left>
+        <VBox styleClass="nav-panel" spacing="2" minWidth="230">
+            <padding><Insets top="20" right="12" bottom="20" left="12"/></padding>
+
+            <!-- Menu Acadêmico -->
+            <Label text="📚 ACADÊMICO" styleClass="nav-section-label"/>
+            <Button fx:id="registerAssessmentButton" text="Cadastrar Avaliação"
+                    maxWidth="Infinity" styleClass="nav-button" onAction="#handleRegisterAssessment"/>
+            <Button fx:id="classReportButton" text="Relatório de Turmas"
+                    maxWidth="Infinity" styleClass="nav-button" onAction="#handleClassReport"/>
+            <Button fx:id="weightReportButton" text="Relatório de Pesos"
+                    maxWidth="Infinity" styleClass="nav-button" onAction="#handleWeightReport"/>
+            <Button fx:id="visualizeDataButton" text="Visualizar Dados"
+                    maxWidth="Infinity" styleClass="nav-button" onAction="#handleVisualizeData"/>
+
+            <!-- Separador -->
+            <Separator style="-fx-background-color: #DEE3EE; -fx-padding: 8 0;"/>
+
+            <!-- Menu Administrativo (apenas ADMIN) -->
+            <VBox fx:id="adminSection" spacing="2" visible="false" managed="false">
+                <Label text="⚙️ ADMINISTRAÇÃO" styleClass="nav-section-label"/>
+                <Button fx:id="registerClassButton" text="Cadastrar Turma"
+                        maxWidth="Infinity" styleClass="nav-button nav-admin" 
+                        onAction="#handleRegisterClass"/>
+                <Button fx:id="persistenceConfigButton" text="Configurar Persistência"
+                        maxWidth="Infinity" styleClass="nav-button nav-admin" 
+                        onAction="#handlePersistenceConfig"/>
+                <Button fx:id="persistenceReportButton" text="Relatório de Persistência"
+                        maxWidth="Infinity" styleClass="nav-button nav-admin" 
+                        onAction="#handlePersistenceReport"/>
+            </VBox>
+
+            <!-- Rodapé do menu -->
+            <Region VBox.vgrow="ALWAYS"/>
+            <Label text="v1.0.0" style="-fx-text-fill: #9CA3AF; -fx-font-size: 10px; -fx-padding: 8 0 0 0;"/>
+        </VBox>
+    </left>
+
+    <!-- Content area -->
+    <center>
+        <VBox alignment="CENTER" spacing="12" styleClass="main-content">
+            <Text text="📊" style="-fx-font-size: 48px; -fx-fill: #D1D5DB;"/>
+            <Text text="Selecione uma opção no menu lateral" styleClass="placeholder-text"/>
+            <Text text="para começar a gerenciar o sistema acadêmico" 
+                  style="-fx-fill: #9CA3AF; -fx-font-size: 13px;"/>
+        </VBox>
+    </center>
+</BorderPane>
